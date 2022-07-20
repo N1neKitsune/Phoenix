@@ -28,10 +28,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -43,52 +40,45 @@
 &nbsp; &nbsp; &nbsp; There are already a lot of red team infrastructure as code but none for a simple and fast internal use. So I want to build a simple and useful red team infra hosted on VirtualBox and then on vmware for a more professional use.
 
 **Why internal use ?**
-
 &nbsp; Most infrastructure as a code are designed to be hosted on Amazon AWS or DigitalOcean but I don\'t want to pay an external host just for internal use.
 
 **Why Virtualbox ?**
-
 &nbsp; This infrastructure is designed for Virtualbox so that it can also be used by students who are tired of rebuilding their infra at every project.
 
 **Why Terraform ?**
-
 &nbsp; Terraform is simple to use and allows a destruction of the whole infrastructure in just one command line. Moreover it allows the integration of ansible playbooks easily.
 
 
 <!-- GETTING STARTED -->
 # Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ## Prerequisites
+**What you need before launching on your host :**
+* [Virtualbox >= **6.1**](https://www.virtualbox.org)
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* [Terraform >= **1.2.5**](https://www.terraform.io)
+
+* [Ansible >= **2.9**](https://ansible.com)
+
 
 ## Installation
+1. Launch Virtualbox.
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+2. Clone the repo :
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/N1neKitsune/PhoenixInfra/
+   cd PhoenixInfra/
    ```
-3. Install NPM packages
+3. Change the variables files `variables.tfvars` with your own parameters.
+
+4. Build and launch Infra with Terraform in the `PhoenixInfra` directory:
    ```sh
-   npm install
+   terraform init
+   terraform plan
+   terraform apply
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+5. Wait for terraform to do it all while drinking a 🍺.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+6. When finished, close the terminal, go back to Virtualbox and enjoy your infrastructure.
 
 
 <!-- USAGE EXAMPLES -->
@@ -98,77 +88,17 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-# Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-# Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- LICENSE -->
 # License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-# Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 # Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Thanks to all authors of these resources that allowed me to create the project.
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Ired.Team](https://www.ired.team)
 
-<p align="right">(<a href="#top">back to top</a>)</p>

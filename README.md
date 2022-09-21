@@ -65,7 +65,7 @@
    git clone https://github.com/N1neKitsune/PhoenixInfra/
    cd PhoenixInfra/
    ```
-3. Change the variables files `variables.tfvars` with your own parameters.
+3. Change the variables files `variables.tf` with your own parameters.
 
 4. Build and launch Infra with Terraform in the `PhoenixInfra` directory:
   

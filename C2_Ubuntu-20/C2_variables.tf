@@ -19,7 +19,7 @@ variable "cpus" {
 }
 
 variable "memory" {
-    description = "At least 2 Giga"
+    description = "At least 2G"
     default = "8096 mib"
 }
 

@@ -57,9 +57,6 @@
 
 * [Terraform >= **1.2.5**](https://www.terraform.io)
 
-* [Ansible >= **2.9**](https://ansible.com)
-
-
 ## Installation
 1. Launch Virtualbox.
 
@@ -71,20 +68,18 @@
 3. Change the variables files `variables.tfvars` with your own parameters.
 
 4. Build and launch Infra with Terraform in the `PhoenixInfra` directory:
-   ```sh
-   terraform init
-   terraform plan
-   terraform apply
-   ```
+  
+     If you are on linux :
+      ```sh
+      bash ./launch.sh
+      ```
+     If you are on windows :
+      ```sh
+      ./launch.ps1
+      ```
 5. Wait for terraform to do it all while drinking a 🍺.
 
 6. When finished, close the terminal, go back to Virtualbox and enjoy your infrastructure.
-
-
-<!-- USAGE EXAMPLES -->
-# Usage
-
-
 
 <!-- LICENSE -->
 # License

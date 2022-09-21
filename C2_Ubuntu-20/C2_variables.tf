@@ -9,7 +9,7 @@ variable "number" {
 }
 
 variable "image" {
-    description = "value"
+    description = "URL for downloading the image or directly set a path to her"
     default = "https://app.vagrantup.com/bento/boxes/ubuntu-20.04/versions/202206.03.0/providers/virtualbox.box"
 }
 
